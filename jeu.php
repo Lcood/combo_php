@@ -20,8 +20,8 @@ require_once __DIR__ . "/templates/header.php";
         <img src="><?=$article["image"];?>" class="d-block mx-lg-auto img-fluid" alt="<?=$article["title"]?>" width="700">
       </div>
       <div class="col-lg-6">
-        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><?=$article["title"] ?></h1>
-        <p class="lead"><?=$article["description"];?></p>
+        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3"><?=htmlentities($article["title"]) ?></h1>
+        <p class="lead"><?=htmlentities($article["description"]);?></p>
       </div>
     </article>
   </section>
