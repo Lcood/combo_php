@@ -1,11 +1,10 @@
 <?php
-
-require_once __DIR__ . "/lib/article.php";
+require_once __DIR__ . "/lib/game.php";
+require_once __DIR__ . "/lib/menu.php";
 require_once __DIR__ . "/templates/header.php";
 
-
-
 ?>
+
  <section>
     <article class="px-4 py-5 my-5 text-center">
         <h1 class="display-5 fw-bold">Centered hero</h1>
@@ -19,7 +18,7 @@ require_once __DIR__ . "/templates/header.php";
     </article>
  </section>
 
- <section class="container">
+<section class="container">
     <article class="row text-center">
         <?php  foreach($articles as $key => $article) {  
             
@@ -28,11 +27,8 @@ require_once __DIR__ . "/templates/header.php";
         } ?>
 
     </article>
- </section>
+</section>
     
-
-
-
 <?php
 
 require_once __DIR__ . "/templates/footer.php";
