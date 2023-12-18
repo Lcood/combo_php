@@ -27,9 +27,8 @@ $currentPage = basename($_SERVER["SCRIPT_NAME"]);
 
             <ul class="nav nav-pills col-12 col-md-auto mb-2 justify-content-center mb-md-0">
 
-              <?php foreach($mainMenu as $key => $mainItem) 
-              { 
-                if(!$mainItem["exclude"]) {
+              <?php foreach($mainMenu as $key => $mainItem) { 
+                if(!array_key_exists("exclude",$mainItem)) {
 
                 ?>
                 <li class="nav-item"><a href="<?=$key;?>" class="nav-link px-2 link-secondary <?php
